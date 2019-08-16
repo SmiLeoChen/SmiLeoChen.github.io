@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>摆格网登录</title>
+    <link rel="stylesheet" href="css/login.css"/>
+</head>
+<body>
+<div class="l-wrap">
+    <!-- 头部logo-->
+    <div class="l-header wrap">
+        <a href="index.html" class="l-logo">
+            <img src="img/51logo.png" alt="摆格网logo" class="l-logoImg"/>
+            <b class="l-logoTxt">
+                <span class="l-logoTxtB">摆格网</span>
+                <br/>
+                <span class="l-logoTxtG">51baige.com</span>
+            </b>
+        </a>
+    </div>
+    <!-- 登录主题-->
+    <div class="l-main clearfix">
+        <div class="wrap">
+            <!-- 右侧注册框-->
+            <div class="l-model fr">
+                <div class="l-headerTip">
+                    <span class="l-welcom">欢迎登录</span>
+                    <span class="fr l-welcomR">
+                        <span>尚未注册？</span>
+                        <a href="register.html" class="l-login">快速注册</a>
+                    </span>
+                </div>
+                <form action="" class="l-form" id="logForm">
+                    <div class="l-line">
+                        <input type="text" placeholder="用户名/邮箱登录" class="l-user"/>
+                    </div>
+                    <div class="l-line2">
+                        <input type="password" placeholder="输入密码" class="l-pass"/>
+                        <div class="error-user">
+                            <i></i>
+                            用户名或密码错误
+                        </div>
+                        <div class="error-email">
+                            <i></i>
+                            邮箱或密码错误
+                        </div>
+                        <div class="error-empty-user">
+                            <i></i>
+                            用户名/邮箱不能为空
+                        </div>
+                        <div class="error-empty-email">
+                            <i></i>
+                            密码不能为空
+                        </div>
+                        <div class="error-empty-all">
+                            <i></i>
+                            用户名/密码不能为空
+                        </div>
+                    </div>
+                    <div class="l-line">
+                        <a href="javascript:;" class="l-log" id="loginBtn">立即登录</a>
+                    </div>
+                    <div class="l-line">
+                    <span>
+                        <input type="checkbox" class="l-check" id="logCheck"/>
+                    <label for="logCheck" class="l-label-ui">记住用户名/邮箱</label>
+                    </span>
+                        <a class="fr forget-pass" href="#">忘记密码？</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <footer class="l-footer">
+        <span>Copyright © 2017-2023 摆格网 All Rights Reserved </span>
+    </footer>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="51_js/login.js"></script>
+</body>
+</html>

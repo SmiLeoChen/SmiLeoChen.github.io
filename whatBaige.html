@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>51摆格网</title>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/what.css"/>
+</head>
+<body>
+<!--头部导航栏-->
+<header class="header">
+    <div class="wrap header_main">
+        <!-- logo-->
+        <a href="#" class="logo">
+            <img src="img/51logo.png" alt="51logo" class="logo_img"/>
+        </a>
+        <a href="#" class="logo_text">
+            <strong>摆格网</strong>
+            <span>51baige.com</span>
+        </a>
+        <!-- 导航栏文字-->
+        <ul class="nav">
+            <li class="nav_li"><a href="index.html" class="nav_a a_hover nav_click">首页</a></li>
+            <li class="nav_li"><a href="vouchsafe.html" class="nav_a a_hover nav_click">特惠 </a></li>
+            <li class="nav_li"><a href="postMessage.html" class="nav_a a_hover nav_click">发布</a></li>
+            <!-- 我的、登录部分-->
+            <li class="nav_li header_myli" id="logRegBox">
+                <!-- 我的-->
+                <a href="javascript:;" class="nav_a nav_a_my a_hover" >我的 <span class="jiao"></span></a>
+                <!-- 登录、我的弹出框-->
+                <!--<div class="login_box" id="loginBox">-->
+                <!-- 登录、注册-->
+                <div class="login_register" id="loginReg">
+                    <a href="login.html" class="login a_hover" id="loginBotton">登录</a>
+                    <a href="register.html" class="register a_hover" id="registerBotton">注册</a>
+                </div>
+                <!--</div>-->
+            </li>
+            <!-- 我的、登录部分-->
+            <li class="nav_li header_myli" id="myCenterBox">
+                <!-- 我的-->
+                <a href="javascript:;" class="nav_a nav_a_my a_hover" >我的 <span class="jiao"></span></a>
+                <!-- 登录后我的-->
+                <ul class="my_center" id="myCenter">
+                    <li class="my_center_li"><a href="#" class="my_center_text h_nickname">
+                        <img src="img/mylogo.png" alt="头像" class="mylogo"/>
+                        昵称</a></li>
+                    <li class="my_center_li"><a href="#" class="my_center_text h_message">消息</a></li>
+                    <li class="my_center_li"><a href="#" class="my_center_text h_integral">积分</a></li>
+                    <li class="my_center_li"><a href="#" class="my_center_text h_grid">格子</a></li>
+                    <li class="my_center_li my_center_exit"><a href="#" class="my_center_text h_exit">退出</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <a href="whatBaige.html" class="what_bai" id="whatBai">摆格网是什么</a>
+
+        <!-- 导航栏下面搜索部分-->
+        <div class="nav_bottom">
+
+            <div class="search">
+                <input type="text" placeholder="搜索关键词试试"/>
+                <span class="search_img"></span>
+            </div>
+
+            <div class="casual_look">
+                <a href="#" class="casual_look_img a_hover">随便看看</a>
+            </div>
+
+            <div class="classify" id="classifyImg">
+                <a href="#" class="classify_img a_hover" >分类市场</a>
+                <!-- 分类市场弹框-->
+                <div class="classify_box" id="classifyBox">
+                    <div class="classify_div">
+                        <span class="classify_cloth">衣</span>
+                        <span class="classify_eat">食</span>
+                        <span class="classify_life">住</span>
+                        <span class="classify_walk">行</span>
+                    </div>
+                    <div>
+                        <span class="classify_skill">工</span>
+                        <span class="classify_play">玩</span>
+                        <span class="classify_study">学</span>
+                        <span class="classify_hold">全</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--右边返回顶部-->
+<ul class="go_top">
+    <li>
+        <em class="feedback"></em>
+        <span class="goTop_txt">反馈建议</span>
+    </li>
+    <li id="goTop">
+        <em class="return_top"></em>
+        <span class="goTop_txt">返回顶部</span>
+    </li>
+</ul>
+
+<!--主体-->
+<section class="index_section">
+    <!-- 1000px-->
+    <div class="what_section_main wrap" >
+        <!-- 左边简介框-->
+        <ul class="what_left">
+            <li class="what_left_li"><a href="javascript:;" page-scroll=".intro" >摆格网简介</a></li>
+            <li class="what_left_li"><a href="javascript:;" page-scroll=".referral">单元格介绍</a></li>
+            <li class="what_left_li"><a href="javascript:;" page-scroll=".handle">单元格操作</a></li>
+            <li class="what_left_li"><a href="javascript:;" page-scroll=".func_intro">功能介绍</a></li>
+            <li class="what_left_li"><a href="javascript:;" page-scroll=".integral">如何赚取积分</a></li>
+        </ul>
+        <!-- 主体-->
+        <div class="intro">
+            <h3>摆格网简介</h3>
+            <p>摆格网是一个信息发布系统网站，能让所有人发布自己希望展示的信息。可以是企业推广、淘宝店铺广告、个人信息展示等等，只要在不违法的情况下可以自由创意。
+                取名由来：菜市会有不同的人摆摊，卖各类东西。摆格网将每个格子作为摊位让任何人进行展示。意义即为“线下摆摊，线上摆格”。</p>
+        </div>
+        <div class="referral">
+            <h3>单元格介绍</h3>
+            <p>摆格网由一个固定大小单元格组成，最少一个，最多可由4个单元格组成大单元格。一个单元格一天价值一元，
+                可自由组合单元格数目和天数。一个单元格的大小为150*150像素，两个单元格组成的格子为300*150像素，四个单元格组成的格子为300*300像素。</p>
+        </div>
+        <div class="handle">
+            <h3>单元格操作</h3>
+            <p>单元格可进行：举报、查看详细信息、跳转链接三个操作。举报：当该单元格信息为违法信息时，
+                可由网友点击举报。查看详细信息：每个单元格都可由用户定义一段文字作为介绍。跳转链接：点击可跳转至目标链接网页。</p>
+        </div>
+       <div class="func_intro">
+           <h3>功能介绍</h3>
+           <p>首页：展示所有单元格。搜索框可进行搜索，支持分类选择、关键字搜索。“随便看看”可随机刷新当前单元格。</p>
+           <p>特惠：特惠区为特定优惠单元格，所有属于特惠信息的都可以归结在此区域。商家目前推广的产品为全网最优价格，相比其他网站都要便宜可以再此区域展示，为用户带来切实实惠，为网站带来更多流量。</p>
+           <p>发布：可发布信息。选择单元格名称、数目、天数、链接网址、详情介绍等后发布进行展示。</p>
+           <p>我的：可查看个人信息、积分、充值、管理单元格。个人信息包含基础介绍，等级。积分包含积分展示，积分可兑换单元格。充值包含微信支付、支付宝支付接口，可用于购买单元格。管理单元格：管理已发布的单元格，可进行修改信息。</p>
+       </div>
+        <div class="integral">
+            <h3>如何赚取积分</h3>
+            <p>积分获得渠道：每点击一个单元格链接可获得1积分，每充值一元可获得1积分。满一定积分可兑换单元格（50积分兑换一个单元格），每天上限50积分。
+                每天登录获得1积分，连续登录可累加1积分，上限5积分。点击获得的积分一定时间后会清除（暂定半年），需及时使用，不可转赠。</p>
+        </div>
+    </div>
+</section>
+<!--footer-->
+<!--<iframe src="footer.html" frameborder="0" height="220" scrolling="no" width="100%"></iframe>-->
+<!--footer-->
+<footer class="footer">
+    <!-- 信息栏-->
+    <div class="information_bar">
+        <!-- 1000px-->
+        <div class="information_bar_main wrap">
+            <!-- logo-->
+            <a href="#" class="logo">
+                <img src="img/51logo.png" alt="51logo" class="logo_img"/>
+            </a>
+            <!-- logo文字-->
+            <a href="#" class="logo_text">
+                <strong>摆格网</strong>
+                <span>51baige.com</span>
+            </a>
+            <!-- 关于我们。。。-->
+            <ul class="about_information">
+                <li class="about_us">
+                    <p class="about_top">关于我们</p>
+                    <a href="#" class="about_information_a">摆格简介</a>
+                    <a href="#" class="about_information_a">联系我们</a>
+                </li>
+                <li class="help_center">
+                    <p class="about_top">帮助中心</p>
+                    <a href="#" class="about_information_a">购买指南</a>
+                    <a href="#" class="about_information_a">支付方式</a>
+                </li>
+                <li class="service_support">
+                    <p class="about_top">服务与支持</p>
+                    <a href="#" class="about_information_a">售后服务</a>
+                    <a href="#" class="about_information_a">加入我们</a>
+                </li>
+                <li class="attention_us">
+                    <p class="about_top">关注我们</p>
+                    <a href="#" class="about_information_a">微信公众号</a>
+                    <a href="#" class="about_information_a">新浪微博</a>
+                    <a href="#" class="about_information_a">腾讯微博</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 版权信息-->
+    <div class="copyright">
+        <div class="copyright_main wrap">
+            <span>2017 - 2023</span>
+            <span class="copyright_bai">摆格网</span>
+            <span>All Rights Reserved</span>
+            <!-- 右边-->
+            <div class="copyright_right" >
+                <a href="#">版权所有</a><a href="#" class="website_map">网站地图</a><a href="#">网站统计</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="51_js/public.js"></script>
+<script src="51_js/what.js"></script>
+</body>
+</html>

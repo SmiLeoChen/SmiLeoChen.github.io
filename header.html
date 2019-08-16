@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>头部</title>
+    <link rel="stylesheet" href="css/public.css"/>
+</head>
+<body>
+<!--头部导航栏-->
+<header class="header">
+    <div class="wrap header_main">
+        <!-- logo-->
+        <a href="#" class="logo">
+            <img src="img/51logo.png" alt="51logo" class="logo_img"/>
+        </a>
+        <a href="#" class="logo_text">
+            <strong>摆格网</strong>
+            <span>51baige.com</span>
+        </a>
+        <!-- 导航栏文字-->
+        <ul class="nav">
+            <li class="nav_li"><a href="index.html" class="nav_a a_hover nav_click">首页</a></li>
+            <li class="nav_li"><a href="vouchsafe.html" class="nav_a a_hover nav_click">特惠 </a></li>
+            <li class="nav_li"><a href="postMessage.html" class="nav_a a_hover nav_click">发布</a></li>
+            <!-- 我的、登录部分-->
+            <li class="nav_li header_myli" id="logRegBox">
+                <!-- 我的-->
+                <a href="javascript:;" class="nav_a nav_a_my a_hover" >我的 <span class="jiao"></span></a>
+                <!-- 登录、我的弹出框-->
+                <!--<div class="login_box" id="loginBox">-->
+                <!-- 登录、注册-->
+                <div class="login_register" id="loginReg">
+                    <a href="login.html" class="login a_hover" id="loginBotton">登录</a>
+                    <a href="register.html" class="register a_hover" id="registerBotton">注册</a>
+                </div>
+                <!--</div>-->
+            </li>
+            <!-- 我的、登录部分-->
+            <li class="nav_li header_myli" id="myCenterBox">
+                <!-- 我的-->
+                <a href="javascript:;" class="nav_a nav_a_my a_hover" >我的 <span class="jiao"></span></a>
+                <!-- 登录后我的-->
+                <ul class="my_center" id="myCenter">
+                    <li class="my_center_li"><a href="#" class="my_center_text h_nickname">
+                        <img src="img/mylogo.png" alt="头像" class="mylogo"/>
+                        昵称</a></li>
+                    <li class="my_center_li"><a href="#" class="my_center_text h_message">消息</a></li>
+                    <li class="my_center_li"><a href="#" class="my_center_text h_integral">积分</a></li>
+                    <li class="my_center_li"><a href="#" class="my_center_text h_grid">格子</a></li>
+                    <li class="my_center_li my_center_exit"><a href="#" class="my_center_text h_exit">退出</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <a href="whatBaige.html" class="what_bai" id="whatBai">摆格网是什么</a>
+
+        <!-- 导航栏下面搜索部分-->
+        <div class="nav_bottom">
+
+            <div class="search">
+                <input type="text" placeholder="搜索关键词试试"/>
+                <span class="search_img"></span>
+            </div>
+
+            <div class="casual_look">
+                <a href="#" class="casual_look_img a_hover">随便看看</a>
+            </div>
+
+            <div class="classify" id="classifyImg">
+                <a href="#" class="classify_img a_hover" >分类市场</a>
+                <!-- 分类市场弹框-->
+                <div class="classify_box" id="classifyBox">
+                    <div class="classify_div">
+                        <span class="classify_cloth">衣</span>
+                        <span class="classify_eat">食</span>
+                        <span class="classify_life">住</span>
+                        <span class="classify_walk">行</span>
+                    </div>
+                    <div>
+                        <span class="classify_skill">工</span>
+                        <span class="classify_play">玩</span>
+                        <span class="classify_study">学</span>
+                        <span class="classify_hold">全</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script>
+    var navA=document.querySelectorAll(".nav_a");
+for (var i = 0; i < navA.length; i++) {
+    navA[i].onclick = function () {
+        for (var j = 0; j < navA.length; j++) {
+            if(navA[j] == this) {
+                this.style.color = 'red';
+            } else {
+                navA[j].style.color = '#fff';
+            }
+        }
+    }
+}
+</script>
+</body>
+</html>

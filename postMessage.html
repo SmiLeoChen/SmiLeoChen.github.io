@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布消息</title>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/post.css"/>
+</head>
+<body>
+<!--头部导航栏-->
+<header class="header">
+    <div class="wrap header_main">
+        <!-- logo-->
+        <a href="#" class="logo">
+            <img src="img/51logo.png" alt="51logo" class="logo_img"/>
+        </a>
+        <a href="#" class="logo_text">
+            <strong>摆格网</strong>
+            <span>51baige.com</span>
+        </a>
+        <!-- 导航栏文字-->
+        <ul class="nav">
+            <li class="nav_li"><a href="index.html" class="nav_a a_hover nav_click">首页</a></li>
+            <li class="nav_li"><a href="vouchsafe.html" class="nav_a a_hover nav_click">特惠 </a></li>
+            <li class="nav_li"><a href="postMessage.html" class="nav_a a_hover nav_click">发布</a></li>
+            <!-- 我的、登录部分-->
+            <li class="nav_li header_myli" id="logRegBox">
+                <!-- 我的-->
+                <a href="javascript:;" class="nav_a nav_a_my a_hover" >我的 <span class="jiao"></span></a>
+                <!-- 登录、我的弹出框-->
+                <!--<div class="login_box" id="loginBox">-->
+                <!-- 登录、注册-->
+                <div class="login_register" id="loginReg">
+                    <a href="login.html" class="login a_hover" id="loginBotton">登录</a>
+                    <a href="register.html" class="register a_hover" id="registerBotton">注册</a>
+                </div>
+                <!--</div>-->
+            </li>
+            <!-- 我的、登录部分-->
+            <li class="nav_li header_myli" id="myCenterBox">
+                <!-- 我的-->
+                <a href="javascript:;" class="nav_a nav_a_my a_hover" >我的 <span class="jiao"></span></a>
+                <!-- 登录后我的-->
+                <ul class="my_center" id="myCenter">
+                    <li class="my_center_li"><a href="#" class="my_center_text h_nickname">
+                        <img src="img/mylogo.png" alt="头像" class="mylogo"/>
+                        昵称</a></li>
+                    <li class="my_center_li"><a href="#" class="my_center_text h_message">消息</a></li>
+                    <li class="my_center_li"><a href="#" class="my_center_text h_integral">积分</a></li>
+                    <li class="my_center_li"><a href="#" class="my_center_text h_grid">格子</a></li>
+                    <li class="my_center_li my_center_exit"><a href="#" class="my_center_text h_exit">退出</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <a href="whatBaige.html" class="what_bai" id="whatBai">摆格网是什么</a>
+
+        <!-- 导航栏下面搜索部分-->
+        <div class="nav_bottom">
+
+            <div class="search">
+                <input type="text" placeholder="搜索关键词试试"/>
+                <span class="search_img"></span>
+            </div>
+
+            <div class="casual_look">
+                <a href="#" class="casual_look_img a_hover">随便看看</a>
+            </div>
+
+            <div class="classify" id="classifyImg">
+                <a href="#" class="classify_img a_hover" >分类市场</a>
+                <!-- 分类市场弹框-->
+                <div class="classify_box" id="classifyBox">
+                    <div class="classify_div">
+                        <span class="classify_cloth">衣</span>
+                        <span class="classify_eat">食</span>
+                        <span class="classify_life">住</span>
+                        <span class="classify_walk">行</span>
+                    </div>
+                    <div>
+                        <span class="classify_skill">工</span>
+                        <span class="classify_play">玩</span>
+                        <span class="classify_study">学</span>
+                        <span class="classify_hold">全</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--右边返回顶部-->
+<ul class="go_top">
+    <li>
+        <em class="feedback"></em>
+        <span class="goTop_txt">反馈建议</span>
+    </li>
+    <li id="goTop">
+        <em class="return_top"></em>
+        <span class="goTop_txt">返回顶部</span>
+    </li>
+</ul>
+
+<!--充值弹框-->
+<div class="recharge_model" id="rechargeBox">
+    <div class="recharge_box" >
+        <!-- 关闭按钮-->
+        <span class="recharge_close" id="rechargeClose">&times;</span>
+        <form action="">
+            <div class="post_form_div1">
+                <span class="post_form">充值方式</span>
+                <input type="radio" name="postMoney" class="post_money" id="postZ"/>
+                <label for="postZ" class="recharge_way recharge_zhi">支付宝</label>
+                <input type="radio" name="postMoney" class="post_money" id="postW"/>
+                <label for="postW" class="recharge_way recharge_wei">微信</label>
+            </div>
+            <div class="clearfix post_form_div2">
+                <span class="post_form post_form_money">充值金额</span>
+                <div class="post_form_money_div">
+                    <input type="radio" name="postFigure" class="post_figure" id="post1"/>
+                    <label for="post1" class="recharge_figure recharge_money1">
+                        <span>1元</span> <br/> <span class="recharge_figure_discount">售价:1元</span>
+                    </label>
+
+                    <input type="radio" name="postFigure" class="post_figure" id="post5"/>
+                    <label for="post5" class="recharge_figure recharge_money5">
+                        <span>5元</span> <br/> <span class="recharge_figure_discount">售价:5元</span>
+                    </label>
+
+                    <input type="radio" name="postFigure" class="post_figure" id="post10"/>
+                    <label for="post10" class="recharge_figure recharge_money10">
+                        <span>10元</span> <br/> <span class="recharge_figure_discount">售价:9元</span>
+                    </label>
+
+                    <input type="radio" name="postFigure" class="post_figure" id="post20"/>
+                    <label for="post20" class="recharge_figure recharge_money20">
+                        <span>20元</span> <br/> <span class="recharge_figure_discount">售价:19.5元</span>
+                    </label>
+
+                    <input type="radio" name="postFigure" class="post_figure" id="post50"/>
+                    <label for="post50" class="recharge_figure recharge_money50">
+                        <span>50元</span> <br/> <span class="recharge_figure_discount">售价:48元</span>
+                    </label>
+
+                    <input type="radio" name="postFigure" class="post_figure" id="post100"/>
+                    <label for="post100" class="recharge_figure recharge_money100">
+                        <span>100元</span> <br/> <span class="recharge_figure_discount">售价:95元</span>
+                    </label>
+
+                    <input type="radio" name="postFigure" class="post_figure post_money" id="postMoneyZ"/>
+                    <label for="postMoneyZ" class="recharge_way recharge_money_custom">自定义金额 : </label>
+                    <input type="text" class="post_money_text"/>元
+                    <p class="recharge_world">(满10元享9.8折、20元9.75折、50元9.6折、100元9.5折)</p>
+                </div>
+            </div>
+            <div>
+                <a href="javascript:;" class="post_form_btn" id="postFormBtn">充值</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!--主体-->
+<section class="index_section">
+    <!-- 1000px-->
+    <div class="post_section_main wrap clearfix" >
+        <!-- 左边简介框-->
+        <ul class="post_left ">
+            <li class="post_left_li">
+                <img src="img/mylogo.png" alt="个人头像"/>
+                <span class="">昵称</span>
+            </li>
+            <li class="post_left_li">
+                <img src="img/balance.png" alt="余额"/>
+                <span>余额: <span class="post_balance">30</span>元</span>
+            </li>
+            <li class="post_left_li">
+                <img src="img/integration.png" alt="积分"/>
+                <span>积分: <span class="post_integration">100</span></span>
+            </li>
+            <li class="post_left_li">
+                <a href="javascript:;" class="post_recharge" id="postRecharge">
+                    <span class="post_rechargeImg">充</span>
+                    充值余额
+                </a>
+            </li>
+        </ul>
+        <!-- 主体-->
+        <form action="" class="post_right" id="postForm">
+            <div class="post_lump">
+                <label>格子名称:</label>
+                <input type="text" class="post_inputTxt" id="gridName"/>
+                <span class="frid-focus" id="fridFocus">格子名称只支持1-6位中英文</span>
+                <span class="frid-error1" id="fridError">格子名称只支持1-6位中英文</span>
+                <span class="frid-error" id="fridEmpty">格子名称不能为空</span>
+            </div>
+            <div class="post_lump">
+                <label>链接网址:</label>
+                <input type="text" class="post_inputTxt" id="linkUrl"/>
+                <span class="frid-error1" id="urlError">网址格式不正确</span>
+                <span class="frid-error" id="urlEmpty">网址不能为空</span>
+            </div>
+            <div class="post_lump">
+                <label>详情介绍:</label>
+                <textarea name="post_intro" id="postIntro" cols="30" rows="10"></textarea>
+                <span class="intro_txt">用一段文字介绍你的格子，<br/>不超过140字。</span>
+                <span class="frid-error1" id="textareaTxt">字数超过140字</span>
+                <span class="frid-error" id="textareaEmpty">详情介绍不能为空</span>
+            </div>
+            <div class="post_lump">
+                <label>关键词添加:</label>
+                <input type="text" class="post_inputTxt" id="antistopAdd"/>
+                <span class="frid-error" id="antistopEmpty">关键词不能为空</span>
+                <span class="antistop">(添加关键词方便他人搜索到您的格子。最多添加四个关键词，用空格分隔开。)</span>
+            </div>
+            <div class="post_lump clearfix">
+                <label class="post_classify">选择分类:</label>
+                <div id="postClassify">
+                    <input type="radio" class="post_classify_radio" id="postCloth" name="postLei" value="衣"/>
+                    <label for="postCloth" class="post_cloth post">衣</label>
+
+                    <input type="radio" class="post_classify_radio" id="postEat" name="postLei" value="食"/>
+                    <label for="postEat" class="post_eat post">食</label>
+
+                    <input type="radio" class="post_classify_radio" id="postLive" name="postLei" value="住"/>
+                    <label for="postLive" class="post_live post">住</label>
+
+                    <input type="radio" class="post_classify_radio" id="postLine" name="postLei" value="行"/>
+                    <label for="postLine" class="post_line post">行</label>
+
+                    <input type="radio" class="post_classify_radio" id="postWork" name="postLei" value="工"/>
+                    <label for="postWork" class="post_work post">工</label>
+
+                    <input type="radio" class="post_classify_radio" id="postPlay" name="postLei" value="玩"/>
+                    <label for="postPlay" class="post_play post">玩</label>
+
+                    <input type="radio" class="post_classify_radio" id="postStudy" name="postLei" value="学"/>
+                    <label for="postStudy" class="post_study post">学</label>
+
+                    <input type="radio" class="post_classify_radio" id="postWhole" name="postLei" value="全"/>
+                    <label for="postWhole" class="post_whold post">全</label>
+                </div>
+                <span class="frid-error" id="classifyEmpty">请选择分类</span>
+                <span class="antistop">(选择相关分类方便他人在分类市场看到您的格子。您可以从七大类中选择，如果不知道该选择哪一项可以选择“全”。)</span>
+            </div>
+            <div class="post_lump">
+                <label>是否特惠:</label>
+                <input id="postNo" type="radio" name="odds"  class="post_odds_text" value="否">
+                <label for="postNo" class="post_odds">否</label>
+                <input id="postYes" type="radio" name="odds"  class="post_odds_text" value="是">
+                <label for="postYes" class="post_odds">是</label>
+                <span class="frid-error" id="tehuiEmpty">请选择是否特惠</span>
+                <span class="antistop">(加入特惠会让您的格子在右上角具有独特的标志，并且会在特惠专区展示您的格子。您需要保证您的信息是全网超低特惠价，如涉及虚假宣传，我们会下架您的格子。)</span>
+            </div>
+            <div class="post_lump clearfix">
+                <label class="post_number">选择数目:</label>
+                <div id="postNum">
+                    <input type="radio" name="postNum" id="postNum1" class="post_num_radio" value="1*1"/>
+                    <label for="postNum1" class="post_num post_num1">1</label>
+
+                    <input type="radio" name="postNum" id="postNum2" class="post_num_radio" value="2*1"/>
+                    <label for="postNum2" class="post_num post_num2">2</label>
+
+                    <input type="radio" name="postNum" id="postNum3" class="post_num_radio" value="1*2"/>
+                    <label for="postNum3" class="post_num post_num3">2</label>
+
+                    <input type="radio" name="postNum" id="postNum4" class="post_num_radio" value="2*2"/>
+                    <label for="postNum4" class="post_num post_num4">4</label>
+                </div>
+                <span class="frid-error" id="numberEmpty">请选择格子数目</span>
+                <span class="antistop">(一个单元格大小为150*150像素，以此类推)</span>
+            </div>
+            <div class="post_lump">
+                <label>选择天数:</label>
+                <input type="radio" name="postDay" id="postDay1"  class="post_num_radio" value="1"/>
+                <label for="postDay1" class="post_day_label">1</label>
+
+                <input type="radio" name="postDay" id="postDay2" class="post_num_radio" value="2"/>
+                <label for="postDay2" class="post_day_label">2</label>
+
+                <input type="radio" name="postDay" id="postDay3" class="post_num_radio" value="3"/>
+                <label for="postDay3" class="post_day_label">3</label>
+                <span class="frid-error" id="dayEmpty">请选择天数</span>
+                <div class="antistop">
+                    <input type="radio" name="postDay" id="customDay"/>
+                    <label for="customDay" class="custom_day">自定义天数:</label>
+                    <input type="text" class="post_day_text"/>
+                </div>
+
+            </div>
+            <div class="post_lump">
+                <div>
+                    <label>上传图片:</label>
+                    <!--input[button] 触发 file click事件-->
+                    <input type="button" value="选择文件" id="lumpButton" class="lump-button"   />
+                    <!--file 隐藏起来  触发onchange事件-->
+                    <input type="file" name="file" accept="image/png,image/jpg,image/jpeg" 	id="lumpFile"
+                           style="display:none;" />(支持格式jpg、png)
+                    <span class="frid-error" id="imgEmpty">请上传图片</span>
+                </div>
+                <span class="" id="postImg">
+                      <!--设置默认图片-->
+                        <img id="myimg" src="img/zanwu.png" class="post_img"/>
+                </span>
+            </div>
+            <div class="post_lump">
+                <label>当前价格:</label>
+                <span class="post_price">1</span> <span class="post_world">元&nbsp;&nbsp;&nbsp;or</span><span class="post_integral">50</span>积分
+            </div>
+            <div class="post_lump">
+                <a href="javascript:;" class="post_issue" id="postIssue">发布</a>
+            </div>
+
+        </form>
+    </div>
+</section>
+<!--footer-->
+<!--<iframe src="footer.html" frameborder="0" height="220" scrolling="no" width="100%"></iframe>-->
+<!--footer-->
+<footer class="footer">
+    <!-- 信息栏-->
+    <div class="information_bar">
+        <!-- 1000px-->
+        <div class="information_bar_main wrap">
+            <!-- logo-->
+            <a href="#" class="logo">
+                <img src="img/51logo.png" alt="51logo" class="logo_img"/>
+            </a>
+            <!-- logo文字-->
+            <a href="#" class="logo_text">
+                <strong>摆格网</strong>
+                <span>51baige.com</span>
+            </a>
+            <!-- 关于我们。。。-->
+            <ul class="about_information">
+                <li class="about_us">
+                    <p class="about_top">关于我们</p>
+                    <a href="#" class="about_information_a">摆格简介</a>
+                    <a href="#" class="about_information_a">联系我们</a>
+                </li>
+                <li class="help_center">
+                    <p class="about_top">帮助中心</p>
+                    <a href="#" class="about_information_a">购买指南</a>
+                    <a href="#" class="about_information_a">支付方式</a>
+                </li>
+                <li class="service_support">
+                    <p class="about_top">服务与支持</p>
+                    <a href="#" class="about_information_a">售后服务</a>
+                    <a href="#" class="about_information_a">加入我们</a>
+                </li>
+                <li class="attention_us">
+                    <p class="about_top">关注我们</p>
+                    <a href="#" class="about_information_a">微信公众号</a>
+                    <a href="#" class="about_information_a">新浪微博</a>
+                    <a href="#" class="about_information_a">腾讯微博</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 版权信息-->
+    <div class="copyright">
+        <div class="copyright_main wrap">
+            <span>2017 - 2023</span>
+            <span class="copyright_bai">摆格网</span>
+            <span>All Rights Reserved</span>
+            <!-- 右边-->
+            <div class="copyright_right" >
+                <a href="#">版权所有</a><a href="#" class="website_map">网站地图</a><a href="#">网站统计</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="51_js/public.js"></script>
+<script src="51_js/post.js"></script>
+</body>
+</html>
