@@ -1,0 +1,57 @@
+input,button,textarea,select{outline:0;}
+body,p,h1,h2,h3,h4,h5,h6,ul,li{margin:0;padding:0;list-style:none;}
+a{color:#00a1d6;cursor:pointer;text-decoration:none;}
+.rt{float:right;}
+body{font-family:"microsoft yahei",Arial,Helvetica;font-size:12px;color:#222;}
+.lf{float:left;}
+.clear{clear:both;}
+header{width:100%;height:160px;box-shadow:0 1px 3px rgba(0,0,0,0.4)}
+.b_top_white{width:990px;margin:0 auto;height:42px;background:#fff;}
+header a{color:#222} header a:hover{color:#00a1d6;}
+.b_top_left,.b_top_left>li,.b_user_top>li{float:left}
+.b_user_top{margin-left:15px;position:relative}
+.b_user_top,form.round_search{float:right;}
+.b_user_top>li{line-height:40px;width:40px;margin:0 10px;position:relative}
+.b_user_top>li>p{position:absolute;top:4px;left:10px;height:12px;border-radius:8px;color:#fff;background:#f25d8e;line-height:12px;padding:1px 3px}
+.t_link{display:inline-block;padding:0 15px;height:42px;line-height:42px;font-size:12px;text-align:center;}
+.b_user_top .t_link{display:block;height:42px;padding:0;text-align: center}
+#live_center,#game_center{position:relative;}
+.cts_box{position:absolute;top:42px;left:0;width:680px;height:260px;z-index:10000;display:none;}
+.top_cover{height:86px;width:100%;background:url(../rl_topbg.png);}
+.cover_mbg{background:url(../rl_top.png) no-repeat;width:980px;margin:0 auto;height:106px;}
+.z_main{padding-left:24px;background:url(../icons.png) -920px -74px;}
+.post{margin-left:10px;position:relative;display:inline-block;float:right}
+.post>.t_link{width:58px;height:48px;background:url(../icons/b-post-hover.png);padding:0;color:#fff;}
+.post:hover ul{visibility:visible;opacity:1;}
+.post>ul{position:absolute;top:42px;right:0;background:#fff;visibility:hidden;transition:0.2s all linear;overflow:hidden;
+	opacity:0;border-radius:0 0 4px 4px;width:128px;height:56px;}
+.post>ul>li{float:left;} .post>ul>li>a{width:64px;height:46px;text-align:center;display:block;color:#f25d8e;padding-top:10px;}
+.b_icon{width:19px;height:19px;display:block;margin:0 auto 3px auto;}
+.upload{background:url(../icons.png) -471px -919px;}
+.upload_mang{background:url(../icons.png) -471px -982px;}/*99a2aa*/
+form.round_search{height:30px;
+	border:1px solid #ccd0d7;padding-left:10px;margin:5px 0;border-radius:16px;position:relative;padding-right:30px;}
+form.round_search>input{width:78px;height:26px;border:0;padding:0;margin-top:2px;transition:all linear .3s;}
+form.round_search .hov_width{width:150px;}
+form.round_search .fos_width{width:150px;}
+header .c_line{width:0;display:inline-block;float:left;border-left:1px solid #222;margin:14px 0;height:14px;}
+.s_fdj{height:30px;width:30px;position:absolute;right:0;bottom:0px;
+	background:url(../icons.png) -725px -723px;}
+#avator{width:38px;height:38px;font-size:12px;position:relative;}
+#avator img{width:38px;height:38px;border-radius:50%;border:1px solid #fff;position:absolute;left:0;z-index:3000;transition:all linear .2s}
+#avator .t{font-weight:normal;padding-left:20px;width:180px}
+#avator .t:hover{background:#eee}
+ul.fadeBox{position:absolute;top:40px;left:0;width:220px;min-height: 80px;max-height: 240px;
+	display:none;background:#fff;border:1px solid #eee;border-top:0;border-radius:5px;overflow-y:auto;overflow-x:hidden;}
+.b_user_top>li:hover ul.fadeBox{display:block}
+ul.fadeBox>li{height:80px;width:92%;border-bottom:1px solid #ddd;margin:2px auto}
+ul.fadeBox>li img{display:inline-block;vertical-align: middle;height:60px;margin:10px 0 0 15px}
+.fadeBox::-webkit-scrollbar{width:10px;}
+.fadeBox::-webkit-scrollbar-thumb{background:#e5e9ef;border:1px solid #ddd;}
+.fadeBox::-webkit-scrollbar-track-piece{background:#eee}
+.home_p_center{position:absolute;top:42px;left:-80px;width:200px;border-radius:0 0 4px 4px;height:0;overflow:hidden;
+	box-shadow:0 2px 3px rgba(0,0,0,.4);z-index:1000;background:#fff;visibility: hidden;transition:all linear .2s}
+.home_p_center:before{content:'';display:table}
+.home_p_center p:first-child{margin-top:20px}
+#avator:hover img{width:60px;height:60px;left:-11px}
+#avator:hover .home_p_center{height:100px;visibility: visible;}

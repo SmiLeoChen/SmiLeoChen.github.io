@@ -1,0 +1,86 @@
+body{
+    background-color: #fff;color:#262626;font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color:#262626;
+}
+ul{
+    list-style: none;
+}
+.clearfix{*zoom:1}
+.clearfix:after{display:block;visibility:hidden;clear:both;height:0;content:'.';font-size:0}
+
+
+
+.c_header{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.c_header_main{
+    position: relative;
+}
+.c_logo{
+    display: block;
+    margin-right: 10px;
+    width: 200px;
+    height: 106px;
+    padding-left: 120px;
+    background: url("../img/51logo.png") no-repeat;
+    position: absolute;
+    top: -28px;
+    left: 0;
+    /*line-height: 107px;*/
+    font-size: 26px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.c_logo>span{
+    display: block;
+}
+.c_span1{
+    margin-top: 5px;
+}
+.c_ul{
+    float:left;
+    margin-left: 160px;
+}
+.c_ul>li{
+    float:left;
+    margin: 0 4px;
+}
+.c_ul>li>a{
+    padding: 0 5px;
+}
+.c_input{
+    height: 25px;
+    line-height: 25px;
+    width: 180px;
+    border-radius: 3px;
+    border:1px solid #262626;
+    margin:0 10px;
+}
+.c_login,
+.c_register{
+    float:right;
+    margin: 0 3px 0;
+    color:#888;
+}
+
+.c_look,
+.c_classify{
+    display: inline-block;
+    padding-left:33px;
+    background:url("../img/loginUser.png") 0 5px no-repeat;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+

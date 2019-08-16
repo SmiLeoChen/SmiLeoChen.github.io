@@ -1,0 +1,58 @@
+.pic_scroll_warpper{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.box_mar{
+    position: absolute;
+    overflow:hidden}
+.little_box{width:150px;height:150px;overflow: hidden}
+.little_box img{width:150px;height:150px;}
+.big_box{width:300px;height:300px;}
+.big_box img{width:300px;height:300px;}
+.pic-list{height:100%}
+.pic-list>div{
+    margin: 10px;
+}
+/**/
+.message-box{
+    background-color: #e6e6ee;
+    min-width: 236px;
+    min-height: 78px;
+}
+.message-tou{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.message-txt{
+    color:#272727;
+    font-size: 22px;
+}
+.message-approve{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url("../img/renzheng.png") no-repeat;
+}
+.message-close{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    line-height: 10px;
+    background-color: #000;
+    color:#fff;
+    font-size: 16px;
+    float:right;
+}
+
+
+
+
+
+
+
+

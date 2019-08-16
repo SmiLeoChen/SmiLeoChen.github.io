@@ -1,0 +1,209 @@
+body{
+    font-family: "微软雅黑";
+    color:#262626;
+    font-size: 17px;
+    background-color: #f3f3f3;
+    min-width: 1000px;
+}
+a{
+    text-decoration: none;
+    color:#262626;
+}
+ul{
+    list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.fr{
+    float:right;
+}
+.fl{
+    float:left;
+}
+.clearfix{*zoom:1}
+.clearfix:after{display:block;visibility:hidden;clear:both;height:0;content:'.';font-size:0}
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*头部*/
+.r-main{
+    margin:40px auto;
+}
+.r-logo{
+    display: inline-block;
+}
+.r-logoImg{
+    vertical-align: bottom;
+}
+.r-logoTxt{
+    display: inline-block;
+}
+.r-logoTxtB{
+    font-size: 32px;
+}
+.r-logoTxtG{
+    font-size: 16px;
+}
+/*注册主体*/
+.r-main{
+    min-height: 600px;
+    background: url("../img/bg.jpg") no-repeat center center;
+}
+.r-header{
+    margin-top: 50px;
+}
+.r-model{
+    margin-top: 50px;
+    width: 364px;
+    min-height: 100px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 2px 2px 2px 1px  rgba(154, 129, 129, .1),-2px -2px 2px 1px rgba(154, 129, 129, .1);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(154, 129, 129, .1),-2px -2px 2px 1px rgba(154, 129, 129, .1);
+    box-shadow: 2px 2px 2px  1px rgba(154, 129, 129, .1),-2px -2px 2px 1px rgba(154, 129, 129, .1);
+    background-color: #fff;
+}
+.r-headerTip{
+    height: 50px;
+    line-height: 50px;
+    padding: 10px 21px;
+}
+.r-welcom{
+    font-size: 22px;
+    color: #ec4040;
+    font-weight: bold;
+}
+.r-welcomR{
+    font-size: 14px;
+    color:#262626;
+}
+.r-login{
+    color:#ec4040;
+}
+.r-line,
+.text-ui{
+    width: 284px;
+    margin: 0 auto 28px;
+    position: relative;
+}
+.text-ui input{
+    width: 284px;
+    padding: 5px 10px;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    border:1px solid #c3b7b7;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 14px;
+    color:#333;
+}
+.text-ui input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.text-ui input.error{
+    outline: 0;
+    border-color:#E24A4A;
+    -webkit-box-shadow:0 0 4px 1px rgba(228,36,36,.6);
+    box-shadow:0 0 4px 1px rgba(228,36,36,.6);
+}
+.r-success{
+    width: 20px;
+    height: 20px;
+    background:url("../img/sign.png") 0 -125px no-repeat;
+    position: absolute;
+    top:50%;
+    margin-top: -10px;
+    right: 10px;
+    display: none;
+}
+.r-focus,
+.r-error,
+.r-error1,
+.r-errorPass,
+.passQ,
+.r-empty{
+    font-size: 12px;
+    color:#999;
+    position: absolute;
+    top:100%;
+    left:0;
+    margin-top: 5px;
+    display: none;
+}
+.r-error i,
+.r-error1 i,
+.r-errorPass i,
+.r-empty i{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("../img/sign.png") 0 -100px no-repeat;
+    position: absolute;
+    top:50%;
+    margin-top: -12px;
+    left:0;
+}
+.r-errorTxt{
+    display: inline-block;
+    margin-left: 20px;
+}
+.r-button{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ec4040;
+    color:#fff;
+    font-size: 18px;
+    margin: 27px 0;
+    border-radius: 3px;
+}
+.passQ{
+    display: none;
+    width: 100%;
+}
+.Q1,
+.Q2,
+.Q3{
+    display: block;
+    float:left;
+    width: 94px;
+    height:19px;
+    color:#fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    background-color:#cac6c6;
+}
+.Q2{
+    border-left: 1px solid #a09898;
+    border-right: 1px solid #a09898;
+    /*margin: 0 1px;*/
+}
+.succQ1{
+    background-color: #e1c239;
+}
+.succQ2{
+    background-color: #e17826;
+}
+.succQ3{
+    background-color: #e1251f;
+}
+/*页脚*/
+.r-footer{
+    text-align: center;
+    color:#aaa;
+    font-size: 12px;
+    margin: 30px 0;
+}
